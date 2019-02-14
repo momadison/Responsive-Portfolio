@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["name"].value;
+            var y = document.forms["myForm"]["email"].value;
+            var z = document.forms["myForm"]["message"].value;
+            if (x == "" || y == "" || z == "") {
+                alert("Please fill out form completely");
+                return false;
+            }
+        }
+    </script>
+    <title>Contact</title>
+</head>
+<body>
+
+    <!--Top of the page containing name and links size and background info-->
+        <header>
+            <!--Container to hold Name and links to mactch the content size-->
+            <div id="nav">
+                <!--Container holding Name-->
+                <div id="name">
+                    Matthew Madison
+                </div>
+                <!--Container holding Navbar-->
+               <div id="navlinks">
+                    <a href="index.html">About </a>  |
+                    <a href="portfolio.html">Portfolio </a>  |
+                    <a href="contact.html">Contact</a>  
+                </div>   
+            </div>
+        </header>
+        <!--Create holder for Content-->
+        <div id="content">
+            <!--Create holder for top content-->
+            <div id="topcontent">
+                <h1>Contact</h1>
+                <hr>
+            </div>
+            <!--Create holder for lower content-->
+            <div id="bottomcontent" class="clearfix">
+                <!--Holder for form-->
+                <div id="formbox">
+                <!--Add Form-->
+                    <form name="myForm" action="mailto:mattomadison@gmail.com" onsubmit="return validateForm()" method="post">
+                    Name<br><br>
+                    <input class="form-control-md" type="text" name="name" size="150"><br><br>
+                    Email<br><br>
+                    <input class="form-control-md" type="text" name="email" size="150"><br><br>
+                    Message<br><br>
+                    <input class="form-control-lg" type="text" name="message" size="150"><br>
+                    <input class="button" type="submit" value="Submit">
+                    </form>
+                </div>   
+            </div>       
+        </div>
+        <footer>
+                Copyright ©
+        </footer>  
+</body>
+</html>
