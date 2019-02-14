@@ -45,7 +45,7 @@ footer {
 .portfoliowrapper-left {
     position: relative;
     float: left;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px 0px;
 }
 
 .portfoliowrapper-right {
@@ -158,12 +158,32 @@ footer {
 
 @media (min-width: 400px) {
 
+input {
+    width: 100%;
+}
+
 #content {
+    max-width: 100%;
+}
+
+#bottomcontent {
     max-width: 100%;
 }
 
 #nav {
     max-width: 100%;
 }
+
+}
+
+@media (max-width: 525px) {
+   
+    .portfoliowrapper-right {
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-top: 5px;
+    }
 
 }
