@@ -156,3 +156,14 @@ footer {
     line-height: 35px;
 }
 
+@media (min-width: 400px) {
+
+#content {
+    max-width: 100%;
+}
+
+#nav {
+    max-width: 100%;
+}
+
+}
